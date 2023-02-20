@@ -1,4 +1,7 @@
-
+const ourTeam = {
+	name: "LearnZilla",
+	members: ["Buzila Ionut", "Ciobanu Laura", "Cojocaru Dan"]
+};
 
 
 // DON'T MODIFY THE CODE BELOW THIS LINE
