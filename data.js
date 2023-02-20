@@ -42,9 +42,9 @@ const ourTeam = {
 				city: "Bucuresti",
 			},
 			codingLevel: 70,
-	}
-]
-	}
+		}
+	]
+}
 
 
 // Team Members
