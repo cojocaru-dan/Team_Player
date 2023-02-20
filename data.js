@@ -240,53 +240,51 @@ for (const member of ourTeam.members) {
 // review Movie
 for (const addRev of ourTeam.members) {
 	for (let i = 0; i < addRev.favorites.favMovies.length; i++){
-	if(addRev.favorites.favMovies[i].title == "The Usual Suspects"){
-		addRev.favorites.favMovies[i].review = "Usual cool"
-	}else if(addRev.favorites.favMovies[i].title == "Se7en"){
-		addRev.favorites.favMovies[i].review = "Se7en cool"
-	}else if(addRev.favorites.favMovies[i].title == "The Silence of the Lambs"){
-		addRev.favorites.favMovies[i].review = "The Silence of the Lambs cool"
-	}else if(addRev.favorites.favMovies[i].title == "Forrest Gump"){
-		addRev.favorites.favMovies[i].review = "Forrest Gump cool"
-	}else if(addRev.favorites.favMovies[i].title == "The Fate of the Furious"){
-		addRev.favorites.favMovies[i].review = "The Fate of the Furious cool"
-	}else if(addRev.favorites.favMovies[i].title == "Need for Speed"){
-		addRev.favorites.favMovies[i].review = "Need for Speed cool"
-	}else if(addRev.favorites.favMovies[i].title == "Baby Driver"){
-		addRev.favorites.favMovies[i].review = "Baby Driver cool"
-	}else if(addRev.favorites.favMovies[i].title == "Our Last Summer"){
-		addRev.favorites.favMovies[i].review = "Our Last Summer cool"
-	}else if(addRev.favorites.favMovies[i].title == "The Breakfast Club"){
-		addRev.favorites.favMovies[i].review = "The Breakfast Club cool"
-	}else if(addRev.favorites.favMovies[i].title == "American Beauty"){
-		addRev.favorites.favMovies[i].review = "American Beauty cool"
-	}else if(addRev.favorites.favMovies[i].title == "Inglourious Basterds"){
-		addRev.favorites.favMovies[i].review = "Inglourious Basterds cool"
-	}else if(addRev.favorites.favMovies[i].title == "Frozen"){
-		addRev.favorites.favMovies[i].review = "Frozen cool"
-	}
-	
-}
+		if(addRev.favorites.favMovies[i].title == "The Usual Suspects"){
+			addRev.favorites.favMovies[i].review = "Usual cool"
+		}else if(addRev.favorites.favMovies[i].title == "Se7en"){
+			addRev.favorites.favMovies[i].review = "Se7en cool"
+		}else if(addRev.favorites.favMovies[i].title == "The Silence of the Lambs"){
+			addRev.favorites.favMovies[i].review = "The Silence of the Lambs cool"
+		}else if(addRev.favorites.favMovies[i].title == "Forrest Gump"){
+			addRev.favorites.favMovies[i].review = "Forrest Gump cool"
+		}else if(addRev.favorites.favMovies[i].title == "The Fate of the Furious"){
+			addRev.favorites.favMovies[i].review = "The Fate of the Furious cool"
+		}else if(addRev.favorites.favMovies[i].title == "Need for Speed"){
+			addRev.favorites.favMovies[i].review = "Need for Speed cool"
+		}else if(addRev.favorites.favMovies[i].title == "Baby Driver"){
+			addRev.favorites.favMovies[i].review = "Baby Driver cool"
+		}else if(addRev.favorites.favMovies[i].title == "Our Last Summer"){
+			addRev.favorites.favMovies[i].review = "Our Last Summer cool"
+		}else if(addRev.favorites.favMovies[i].title == "The Breakfast Club"){
+			addRev.favorites.favMovies[i].review = "The Breakfast Club cool"
+		}else if(addRev.favorites.favMovies[i].title == "American Beauty"){
+			addRev.favorites.favMovies[i].review = "American Beauty cool"
+		}else if(addRev.favorites.favMovies[i].title == "Inglourious Basterds"){
+			addRev.favorites.favMovies[i].review = "Inglourious Basterds cool"
+		}else if(addRev.favorites.favMovies[i].title == "Frozen"){
+			addRev.favorites.favMovies[i].review = "Frozen cool"
+	}	
+  }
 }
 
 // review Books
 for (const addRev of ourTeam.members) {
 	for (let i = 0; i < addRev.favorites.favBooks.length; i++){
-	if(addRev.favorites.favBooks[i].title == "Urzeala tronurilor"){
-		addRev.favorites.favBooks[i].review = "Urzeala tronurilor cool book"
-	}else if(addRev.favorites.favBooks[i].title == "Stăpânul inelelor"){
-		addRev.favorites.favBooks[i].review = "Stăpânul inelelor cool book"
-	}else if(addRev.favorites.favBooks[i].title == "Jane Eyre"){
-		addRev.favorites.favBooks[i].review = "Jane Eyre cool book"
-	}else if(addRev.favorites.favBooks[i].title == "Uncle Tom's Cabin"){
-		addRev.favorites.favBooks[i].review = "Uncle Tom's Cabin cool book"
-	}else if(addRev.favorites.favBooks[i].title == "The Namesake"){
-		addRev.favorites.favBooks[i].review = "The Namesake cool book"
-	}else if(addRev.favorites.favBooks[i].title == "Norse Mythology"){
-		addRev.favorites.favBooks[i].review = "Norse Mythology cool book"
+		if(addRev.favorites.favBooks[i].title == "Urzeala tronurilor"){
+			addRev.favorites.favBooks[i].review = "Urzeala tronurilor cool book"
+		}else if(addRev.favorites.favBooks[i].title == "Stăpânul inelelor"){
+			addRev.favorites.favBooks[i].review = "Stăpânul inelelor cool book"
+		}else if(addRev.favorites.favBooks[i].title == "Jane Eyre"){
+			addRev.favorites.favBooks[i].review = "Jane Eyre cool book"
+		}else if(addRev.favorites.favBooks[i].title == "Uncle Tom's Cabin"){
+			addRev.favorites.favBooks[i].review = "Uncle Tom's Cabin cool book"
+		}else if(addRev.favorites.favBooks[i].title == "The Namesake"){
+			addRev.favorites.favBooks[i].review = "The Namesake cool book"
+		}else if(addRev.favorites.favBooks[i].title == "Norse Mythology"){
+			addRev.favorites.favBooks[i].review = "Norse Mythology cool book"
 	}
-	
-}
+  }
 }
 
 // The isNewerThan2000 and age keys of the books and the description keys of the movies are removed
