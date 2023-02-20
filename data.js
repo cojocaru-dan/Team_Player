@@ -24,7 +24,7 @@ const ourTeam = {
 						title: ["The Fate of the Furious"],
 					yearOfRelease: 2017, 
 					imbdRating: 6.6 ,
-					shortDescription: "Dominic Toreto,he has to betray his team to save his child from the hands of an enemy, he has to work for him, in the end the team helps him recover the child and liquidate the criminals!",
+					description: "Dominic Toreto,he has to betray his team to save his child from the hands of an enemy, he has to work for him, in the end the team helps him recover the child and liquidate the criminals!",
 					directors:["F.Gary Gray"],
 					writers: ["Chris Morgan"],
 					stars: ["Vin Diesel", "Dwayne Johnson", "Jason Statham "],
@@ -33,7 +33,7 @@ const ourTeam = {
 						title: "Need for Speed",
 					yearOfRelease: 2014,
 					imbdRating: 6.4,
-					shortDescription: "Fresh from prison, a street racer who was framed by a wealthy business associate joins a cross-country race with revenge in mind. His ex-partner, learning of the plan, places a massive bounty on his head as the race begins.",
+					description: "Fresh from prison, a street racer who was framed by a wealthy business associate joins a cross-country race with revenge in mind. His ex-partner, learning of the plan, places a massive bounty on his head as the race begins.",
 					directors: ["Scott Waugh"],
 					writers: ["George Gatins", "John Gatins."],
 					stars: ["Aaron Paul", "Imogen Poots", "Dominic Cooper"],
@@ -42,7 +42,7 @@ const ourTeam = {
 						title: "Baby Driver",	
 					yearOfRelease: 2017,	
 					imbdRating: 7.6,	
-					shortDescription: "After being coerced into working for a crime boss, a young getaway driver finds himself taking part in a heist doomed to fail.",
+					description: "After being coerced into working for a crime boss, a young getaway driver finds himself taking part in a heist doomed to fail.",
 					directors: ["Edgar Wright"],
 					writers: ["Edgar Wright"],
 					stars: ["Ansel Elgort", "Jon Bernthal", "Eiza González"],
@@ -51,7 +51,7 @@ const ourTeam = {
 						title: "Our Last Summer",
 					yearOfRelease: 2018,
 					imbdRating: 7.5,
-					shortDescription: "A group of college graduates go on one final vacation together. Just before the trip, Nathan gets dumped by his girlfriend and gets tricked in to going on the trip without knowing she'll be there. Hilarity ensues.",
+					description: "A group of college graduates go on one final vacation together. Just before the trip, Nathan gets dumped by his girlfriend and gets tricked in to going on the trip without knowing she'll be there. Hilarity ensues.",
 					directors: ["Thomas Finn", "Joseph Voce"],
 					writers: ["Thomas Finn", "Joseph Voce"],
 					stars: ["KJ Apa" , "Tyler Posey "],
@@ -132,7 +132,7 @@ const ourTeam = {
 					"title": "Uncle Tom's Cabin",
 					"author" : "Harriet Beecher Stowe",
 					"year": 1852,
-					"isNewereThan2000": false,
+					"isNewerThan2000": false,
 					"age": 171,
 					"characters": ["Uncle Tom", "Miss Ophelia", "Augustine St. Clare", "Emily Shelby", "Eliza", "Quimbo", "Simon Legree", "Evangeline St. Clare", "Arthur Shelby", "George Shelby", "Topsy"]
 				},
@@ -219,6 +219,8 @@ const ourTeam = {
 	]
 }
 
+// Seniority
+
 for (const member of ourTeam.members) {
 	if (member.codingLevel.level < 50) {
 		member.codingLevel.seniority = "junior";
@@ -235,11 +237,75 @@ for (const member of ourTeam.members) {
 
 
 
-// Team Members
+// review Movie
+for (const addRev of ourTeam.members) {
+	for (let i = 0; i < addRev.favorites.favMovies.length; i++){
+	if(addRev.favorites.favMovies[i].title == "The Usual Suspects"){
+		addRev.favorites.favMovies[i].review = "Usual cool"
+	}else if(addRev.favorites.favMovies[i].title == "Se7en"){
+		addRev.favorites.favMovies[i].review = "Se7en cool"
+	}else if(addRev.favorites.favMovies[i].title == "The Silence of the Lambs"){
+		addRev.favorites.favMovies[i].review = "The Silence of the Lambs cool"
+	}else if(addRev.favorites.favMovies[i].title == "Forrest Gump"){
+		addRev.favorites.favMovies[i].review = "Forrest Gump cool"
+	}else if(addRev.favorites.favMovies[i].title == "The Fate of the Furious"){
+		addRev.favorites.favMovies[i].review = "The Fate of the Furious cool"
+	}else if(addRev.favorites.favMovies[i].title == "Need for Speed"){
+		addRev.favorites.favMovies[i].review = "Need for Speed cool"
+	}else if(addRev.favorites.favMovies[i].title == "Baby Driver"){
+		addRev.favorites.favMovies[i].review = "Baby Driver cool"
+	}else if(addRev.favorites.favMovies[i].title == "Our Last Summer"){
+		addRev.favorites.favMovies[i].review = "Our Last Summer cool"
+	}else if(addRev.favorites.favMovies[i].title == "The Breakfast Club"){
+		addRev.favorites.favMovies[i].review = "The Breakfast Club cool"
+	}else if(addRev.favorites.favMovies[i].title == "American Beauty"){
+		addRev.favorites.favMovies[i].review = "American Beauty cool"
+	}else if(addRev.favorites.favMovies[i].title == "Inglourious Basterds"){
+		addRev.favorites.favMovies[i].review = "Inglourious Basterds cool"
+	}else if(addRev.favorites.favMovies[i].title == "Frozen"){
+		addRev.favorites.favMovies[i].review = "Frozen cool"
+	}
+	
+}
+}
 
+// review Books
+for (const addRev of ourTeam.members) {
+	for (let i = 0; i < addRev.favorites.favBooks.length; i++){
+	if(addRev.favorites.favBooks[i].title == "Urzeala tronurilor"){
+		addRev.favorites.favBooks[i].review = "Urzeala tronurilor cool book"
+	}else if(addRev.favorites.favBooks[i].title == "Stăpânul inelelor"){
+		addRev.favorites.favBooks[i].review = "Stăpânul inelelor cool book"
+	}else if(addRev.favorites.favBooks[i].title == "Jane Eyre"){
+		addRev.favorites.favBooks[i].review = "Jane Eyre cool book"
+	}else if(addRev.favorites.favBooks[i].title == "Uncle Tom's Cabin"){
+		addRev.favorites.favBooks[i].review = "Uncle Tom's Cabin cool book"
+	}else if(addRev.favorites.favBooks[i].title == "The Namesake"){
+		addRev.favorites.favBooks[i].review = "The Namesake cool book"
+	}else if(addRev.favorites.favBooks[i].title == "Norse Mythology"){
+		addRev.favorites.favBooks[i].review = "Norse Mythology cool book"
+	}
+	
+}
+}
 
+// The isNewerThan2000 and age keys of the books and the description keys of the movies are removed
+for (const iterator of ourTeam.members) {
+	for (const item of iterator.favorites.favMovies) {
+		delete item.description;
+	}
+}
 
-
+for (const iterator of ourTeam.members) {
+	for (const item of iterator.favorites.favBooks) {
+		delete item.isNewerThan2000;
+		delete item.age;
+	}
+}
+console.log(ourTeam.members[0].favorites.favBooks);
+console.log(ourTeam.members[1].favorites.favBooks);
+console.log(ourTeam.members[2].favorites.favBooks);
+// console.log(ourTeam.members[0].favorites.favBooks);
 
 
 
