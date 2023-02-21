@@ -408,7 +408,7 @@ console.log("Our team average age is:", Math.floor(averageAge));
 
 // Average coding level
 
-let averageCodingLevel = 0;
+let averageCodingLevel = Math.floor(0);
 let totalLevel = 0;
 let string = "";
 for ( let i = 0; i < ourTeam.members.length; i ++) {
@@ -423,7 +423,7 @@ for ( let i = 0; i < ourTeam.members.length; i ++) {
 	}
 }
 
-console.log(string + Math.floor(averageCodingLevel));
+console.log(Math.floor(averageCodingLevel));
 
 // youngestMember
 let youngestMember = ourTeam.members[0];
@@ -455,11 +455,11 @@ console.log("The oldest member of our team is:", oldestMember.name);
 for (let i = 0; i < ourTeam.members.length; i++) {
 	let city = ourTeam.members[i].location.city ;
 	if (city === "Nasaud") {
-		location.Nasaud += ourTeam.members[i].name + ", ";
+		location.Nasaud += ourTeam.members[i].name + "  ";
 	}else if (city === "Iasi") {
-		location.Iasi += ourTeam.members[i].name + ", ";
+		location.Iasi += ourTeam.members[i].name + " ";
 	}else if (city === "Bucuresti") {
-		location.Bucuresti += ourTeam.members[i].name + ", ";
+		location.Bucuresti += ourTeam.members[i].name + " ";
 	}
 	
 }
@@ -497,9 +497,9 @@ const ionutColor = {
 		blue: 0,
 	},
 	secondary: {
-		red: 204, 
-		green: 102,
-		blue: 255,
+		red: 209, 
+		green: 88,
+		blue: 201,
 	}
 }
 
