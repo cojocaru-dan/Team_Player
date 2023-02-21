@@ -404,7 +404,7 @@ for ( let i = 0; i < ourTeam.members.length; i ++) {
 	averageAge += (2023 - ourTeam.members[i].birthday.year) / 3;
 }
 
-console.log("Our team average age is ", Math.floor(averageAge));
+console.log("Our team average age is:", Math.floor(averageAge));
 
 // Average coding level
 
@@ -415,17 +415,35 @@ for ( let i = 0; i < ourTeam.members.length; i ++) {
 	totalLevel += ourTeam.members[i].codingLevel.level;
 	averageCodingLevel = totalLevel / 3;
 	if (averageCodingLevel < 50) {
-		string = " Our team coding level is junior: ";
+		string = "Our team coding level is junior: ";
 	} else if (averageCodingLevel >= 50 && averageCodingLevel <= 75) {
-		string = " Our team coding level is medior: ";
+		string = "Our team coding level is medior: ";
 	} else if (averageCodingLevel > 75) {
-		string =" Our team coding level is senior: ";
+		string ="Our team coding level is senior: ";
 	}
 }
 
 console.log(string + Math.floor(averageCodingLevel));
 
+// youngestMember
+let youngestMember = ourTeam.members[0];
 
+for (let i = 0; i < ourTeam.members.length; i++) {
+	if (ourTeam.members[i].birthday.year > youngestMember.birthday.year) {
+		youngestMember = ourTeam.members[i];
+	}
+}
+console.log("The youngest member of our team is:", youngestMember.name);
+
+// oldestMember
+let oldestMember = ourTeam.members[0];
+
+for (let i = 0; i < ourTeam.members.length; i++) {
+	if (ourTeam.members[i].birthday.year < oldestMember.birthday.year) {
+		oldestMember = ourTeam.members[i];
+	}
+}
+console.log("The oldest member of our team is:", oldestMember.name);
 
 // DON'T MODIFY THE CODE BELOW THIS LINE
 
