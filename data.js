@@ -115,19 +115,19 @@ const ourTeam = {
 					year: 1985,
 					rating: 7.8,
 					description: "Five high school students meet in Saturday detention and discover how they have a lot more in common than they thought.",
-					directors: "John Hughes",
-					writers: "John Hughes",
-					stars: "Emilio Estevez", "Judd Nelson", "Molly Ringwald",
-					genres: "comedy", "drama",
+					directors: ["John Hughes"],
+					writers: ["John Hughes"],
+					stars: ["Emilio Estevez", "Judd Nelson", "Molly Ringwald"],
+					genres: ["comedy", "drama"],
 				},
 				{
 					title: "American Beauty",
 					year: 1999,
 					rating: 8.4,
 					description: "A sexually frustrated suburban father has a mid-life crisis after becoming infatuated with his daughter's best friend.",
-					directors: "Sam Mendes",
-					writers: "Alan Ball",
-					stars: "Kevin Spacey", "Annette Bening", "Thora Birch",
+					directors: ["Sam Mendes"],
+					writers: ["Alan Ball"],
+					stars: ["Kevin Spacey", "Annette Bening", "Thora Birch"],
 					genres: "drama"
 				},
 				{
@@ -135,20 +135,20 @@ const ourTeam = {
 					year: 2009,
 					rating: 8.3,
 					description: "In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans for the same.",
-					directors: "Quentin Tarantino",
-					writers: "Quentin Tarantino",
-					stars: "Brad Pitt", "Diane Kruger", "Eli Roth",
-					genres: "adventure", "drama", "war",
+					directors: ["Quentin Tarantino"],
+					writers: ["Quentin Tarantino"],
+					stars: ["Brad Pitt", "Diane Kruger", "Eli Roth"],
+					genres: ["adventure", "drama", "war"],
 				},
 				{
 					title: "Frozen",
 					year: 2013,
 					rating: 7.4,
 					description: "When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.",
-					directors: "Chris Buck", "Jennifer Lee",
-					writers: "Jennifer Lee (screenplay)", "Hans Christian Andersen (story inspired by 'The Snow Queen'",
-					stars: "Kristen Bell(voice)", "Idina Menzel(voice)", "Jonathan Groff(voice)",
-					genres: "animation", "adventure", "comedy",
+					directors: ["Chris Buck", "Jennifer Lee"],
+					writers: ["Jennifer Lee (screenplay)", "Hans Christian Andersen (story inspired by 'The Snow Queen'"],
+					stars: ["Kristen Bell(voice)", "Idina Menzel(voice)", "Jonathan Groff(voice)"],
+					genres: ["animation", "adventure", "comedy"]
 				}, 
 			],
 				favBooks:  [
@@ -424,7 +424,7 @@ console.log("Our team average age is:", Math.floor(averageAge));
 
 // Average coding level
 
-let averageCodingLevel = Math.floor(0);
+let averageCodingLevel = 0;
 let totalLevel = 0;
 let string = "";
 for ( let i = 0; i < ourTeam.members.length; i ++) {
@@ -438,8 +438,8 @@ for ( let i = 0; i < ourTeam.members.length; i ++) {
 		string ="Our team coding level is senior: ";
 	}
 }
-
-console.log(Math.floor(averageCodingLevel));
+averageCodingLevel = Math.floor(averageCodingLevel);
+console.log(averageCodingLevel);
 
 // youngestMember
 let youngestMember = ourTeam.members[0];
@@ -449,7 +449,7 @@ for (let i = 0; i < ourTeam.members.length; i++) {
 		youngestMember = ourTeam.members[i];
 	}
 }
-console.log("The youngest member of our team is:", youngestMember.name);
+ console.log("The youngest member of our team is:", youngestMember.name);
 
 // oldestMember
 let oldestMember = ourTeam.members[0];
