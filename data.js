@@ -117,8 +117,8 @@ const ourTeam = {
 					description: "Five high school students meet in Saturday detention and discover how they have a lot more in common than they thought.",
 					directors: "John Hughes",
 					writers: "John Hughes",
-					stars: "Emilio Estevez", "Judd Nelson", "Molly Ringwald",
-					genres: "comedy", "drama"
+					stars: ["Emilio Estevez", "Judd Nelson", "Molly Ringwald"],
+					genres: ["comedy", "drama"]
 				},
 				{
 					title: "American Beauty",
@@ -127,7 +127,7 @@ const ourTeam = {
 					description: "A sexually frustrated suburban father has a mid-life crisis after becoming infatuated with his daughter's best friend.",
 					directors: "Sam Mendes",
 					writers: "Alan Ball",
-					stars: "Kevin Spacey", "Annette Bening", "Thora Birch",
+					stars: ["Kevin Spacey", "Annette Bening", "Thora Birch"],
 					genres: "drama"
 				},
 				{
@@ -137,18 +137,18 @@ const ourTeam = {
 					description: "In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans for the same.",
 					directors: "Quentin Tarantino",
 					writers: "Quentin Tarantino",
-					stars: "Brad Pitt", "Diane Kruger", "Eli Roth",
-					genres: "adventure", "drama", "war"
+					stars: ["Brad Pitt", "Diane Kruger", "Eli Roth"],
+					genres: ["adventure", "drama", "war"]
 				},
 				{
 					title: "Frozen",
 					year: 2013,
 					rating: 7.4,
 					description: "When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.",
-					directors: "Chris Buck", "Jennifer Lee",
-					writers: "Jennifer Lee (screenplay)", "Hans Christian Andersen (story inspired by 'The Snow Queen'",
-					stars: "Kristen Bell(voice)", "Idina Menzel(voice)", "Jonathan Groff(voice)",
-					genres: "animation", "adventure", "comedy"
+					directors: ["Chris Buck", "Jennifer Lee"],
+					writers: ["Jennifer Lee (screenplay)", "Hans Christian Andersen (story inspired by 'The Snow Queen')"],
+					stars: ["Kristen Bell(voice)", "Idina Menzel(voice)", "Jonathan Groff(voice)"],
+					genres: ["animation", "adventure", "comedy"]
 				}, 
 			],
 				favBooks:  [
@@ -521,15 +521,6 @@ const ionutColor = {
 
 const lauraColor = {
 	primary: {
-<<<<<<< HEAD
-		red: 204, 
-		green: 0,
-		blue: 204,
-	},
-	secondary: {
-		red: 204, 
-		green: 153,
-=======
 		red: 76, 
 		green: 0,
 		blue: 153,
@@ -537,7 +528,6 @@ const lauraColor = {
 	secondary: {
 		red: 255, 
 		green: 204,
->>>>>>> 86f434d707c1a541425f62373ff15b4423f4ba55
 		blue: 255,
 	}
 }
