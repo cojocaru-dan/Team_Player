@@ -81,14 +81,14 @@ const ourTeam = {
 						artist: "Yiruma",
 						title: "The River Flows In You",
 						year: 2017,
-						genres: ["dance", "electonic"],
+						genres: ["dance", "electronic"],
 						iLikeIt : true,
 					},
 					{
 						artist: "Axwell & Ingrosso",
 						title: "Dreamer",
 						year: 2017,
-						genres: ["Dance-pop"],
+						genres: ["dance pop", "dance"],
 						iLikeIt : true,
 					},
 				],
@@ -158,13 +158,13 @@ const ourTeam = {
 					artist: "Lana del Rey",
 					title: "Yes to heaven",
 					year: 2013,
-					genres: ["dream pop"],
+					genres: ["dream pop", "indie rock"],
 				},
 				{
 					artist: "Tiesto",
 					title: "10:35",
 					year: 2023,
-					genres: ["dance", "electro pop"],
+					genres: ["dance", "electro pop", "electronic"],
 				},
 		]
 			}
@@ -249,7 +249,7 @@ const ourTeam = {
 						artist: "Tracy Chapman",
 						title: "Tracy Chapman",
 						year: 1988,
-						genres: ["folk rock"],
+						genres: ["folk rock", "indie rock"],
 						sale: 20000000
 					},
 					{
@@ -445,7 +445,50 @@ for (let i = 0; i < ourTeam.members.length; i++) {
 }
 console.log("The oldest member of our team is:", oldestMember.name);
 
-// DON'T MODIFY THE CODE BELOW THIS LINE
+// From the same location
+ let location = {
+	Nasaud: "",
+	Iasi: "",
+	Bucuresti: "",
+};
+
+for (let i = 0; i < ourTeam.members.length; i++) {
+	let city = ourTeam.members[i].location.city ;
+	if (city === "Nasaud") {
+		location.Nasaud += ourTeam.members[i].name + ", ";
+	}else if (city === "Iasi") {
+		location.Iasi += ourTeam.members[i].name + ", ";
+	}else if (city === "Bucuresti") {
+		location.Bucuresti += ourTeam.members[i].name + ", ";
+	}
+	
+}
+console.log("Din Nasaud: " + location.Nasaud);
+console.log("Din Iasi: " + location.Iasi);
+console.log("Din Bucuresti: " + location.Bucuresti);
+
+// Common music style
+let commonGenres = {};
+
+for (let i = 0; i < ourTeam.members.length; i++) {
+	const favSong = ourTeam.members[i].favorites.favSongs;
+	for (let j = 0; j < favSong.length; j++) {
+		const favGenre = favSong[j].genres;
+		for (let k = 0; k < favGenre.length; k++) {
+			const genre = favGenre[k];
+			if (commonGenres.hasOwnProperty(genre)) {
+				commonGenres[genre]++;
+			}else 
+			commonGenres[genre] = 1;
+		}
+	}
+	
+}
+console.log(commonGenres);
+
+
+
+	// DON'T MODIFY THE CODE BELOW THIS LINE
 
 let toExport;
 
