@@ -153,7 +153,6 @@ const ourTeam = {
 					"characters": ["Uncle Tom", "Miss Ophelia", "Augustine St. Clare", "Emily Shelby", "Eliza", "Quimbo", "Simon Legree", "Evangeline St. Clare", "Arthur Shelby", "George Shelby", "Topsy"]
 				},
 			],
-<<<<<<< HEAD
 				favSongs: [
 				{
 					artist: "Lana del Rey",
@@ -168,24 +167,6 @@ const ourTeam = {
 					genres: ["dance", "electro pop"],
 				},
 		]
-=======
-			favSongs: [
-				{
-					artist: "Michael Jackson",
-					title: "Thriller",
-					year: 1982,
-					genres: ["pop", "post-disco", "funk", "rock"],
-					iLikeIt : false,
-				},
-				{
-					artist: "AC/DC",
-					title: "Back in Black",
-					year: 1980,
-					genres: ["hard rock"],
-					iLikeIt : false,
-				},
-			],
->>>>>>> 0725d2add375d2c8f700a8d3d7252c218e78dd2a
 			}
 		},
 		{
@@ -328,13 +309,13 @@ for (const addRev of ourTeam.members) {
 		}else if(addRev.favorites.favMovies[i].title == "Our Last Summer"){
 			addRev.favorites.favMovies[i].review = "The Last Summer is an enjoyable experience, after the movie I am left with a good feeling of joy.It is a summer movie for everyone to watch and highly recommended for this summer vacation"
 		}else if(addRev.favorites.favMovies[i].title == "The Breakfast Club"){
-			addRev.favorites.favMovies[i].review = "The Breakfast Club cool"
+			addRev.favorites.favMovies[i].review = "This movie is one of the chillest and most straight forward movies ever. "
 		}else if(addRev.favorites.favMovies[i].title == "American Beauty"){
-			addRev.favorites.favMovies[i].review = "American Beauty cool"
+			addRev.favorites.favMovies[i].review = "No matter how hard life, you can always find its hidden beauty. "
 		}else if(addRev.favorites.favMovies[i].title == "Inglourious Basterds"){
-			addRev.favorites.favMovies[i].review = "Inglourious Basterds cool"
+			addRev.favorites.favMovies[i].review = "An absolutely marvelous film. I could watch it countless times and never become bored of the ingenious storyline. "
 		}else if(addRev.favorites.favMovies[i].title == "Frozen"){
-			addRev.favorites.favMovies[i].review = "Frozen cool"
+			addRev.favorites.favMovies[i].review = "Based on the fairy tale “The Snow Queen” by Hans Christian Anderson and is a project in the works since the beginnings of Disney. This is hands down one of the best musicals Disney has created."
 	}	
   }
 }
@@ -347,10 +328,10 @@ for (const addRev of ourTeam.members) {
 		}else if(addRev.favorites.favBooks[i].title == "Stăpânul inelelor"){
 			addRev.favorites.favBooks[i].review = "It's the kind of reading we all need to have in our library. Children, adults, teenagers, it doesn't matter which category you fall into, you can read this book at any time and at any time that will keep you hooked."
 		}else if(addRev.favorites.favBooks[i].title == "Jane Eyre"){
-			addRev.favorites.favBooks[i].review = "Jane Eyre cool book"
+			addRev.favorites.favBooks[i].review = "Certainly one of the best novels ever written."
 		}else if(addRev.favorites.favBooks[i].title == "Uncle Tom's Cabin"){
 			addRev.favorites.favBooks[i].review = "Uncle Tom's Cabin cool book"
-		}else if(addRev.favorites.favBooks[i].title == "The Namesake"){
+		}else if(addRev.favorites.favBooks[i].title == "Uncle Tom’s Cabin is a wonderfully forward-thinking book full of optimism, hope and one that captures the simple and honest nature that comes with a genuine hero who is faced with tyranny. "){
 			addRev.favorites.favBooks[i].review = "The Namesake cool book"
 		}else if(addRev.favorites.favBooks[i].title == "Norse Mythology"){
 			addRev.favorites.favBooks[i].review = "Norse Mythology cool book"
@@ -365,11 +346,11 @@ for (const addRev of ourTeam.members) {
 			addRev.favorites.favSongs[i].review = "If you're an aspiring pianist or just enjoy the sound of a simple, beautiful melody, you will have likely come across Yiruma's lyrical piano piece, 'River Flows in You' (2001)!"
 		}else if(addRev.favorites.favSongs[i].title == "Dreamer"){
 			addRev.favorites.favSongs[i].review = "This song is a motivation to dream, not to give up on your dreams : I can promise you, Yes, I am a dreamer too. We are dreamers together, Always and forever!"
-		}else if(addRev.favorites.favSongs[i].title == "Song1"){
-			addRev.favorites.favSongs[i].review = "Jane Eyre cool book"
-		}else if(addRev.favorites.favSongs[i].title == "Uncle Tom's Cabin"){
-			addRev.favorites.favSongs[i].review = "Uncle Tom's Cabin cool book"
-		}else if(addRev.favorites.favSongs[i].title == "The Namesake"){
+		}else if(addRev.favorites.favSongs[i].title == "Yes to heaven"){
+			addRev.favorites.favSongs[i].review = "This song sounds like a summer day"
+		}else if(addRev.favorites.favSongs[i].title == "10:35"){
+			addRev.favorites.favSongs[i].review = "It's energizing!"
+		}else if(addRev.favorites.favSongs[i].title == ""){
 			addRev.favorites.favSongs[i].review = "The Namesake cool book"
 		}else if(addRev.favorites.favSongs[i].title == "Norse Mythology"){
 			addRev.favorites.favSongs[i].review = "Norse Mythology cool book"
