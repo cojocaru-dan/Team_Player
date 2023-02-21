@@ -246,19 +246,19 @@ const ourTeam = {
 				],
 				favSongs: [
 					{
-						artist: "Michael Jackson",
-						title: "Thriller",
-						year: 1982,
-						genres: ["pop", "post-disco", "funk", "rock"],
-						iLikeIt : false,
+						artist: "Tracy Chapman",
+						title: "Tracy Chapman",
+						year: 1988,
+						genres: ["folk rock"],
+						sale: 20000000
 					},
 					{
-						artist: "AC/DC",
-						title: "Back in Black",
-						year: 1980,
-						genres: ["hard rock"],
-						iLikeIt : false,
-					},
+						artist: "Eagles",
+						title: "Their Greatest Hits (1971 - 1975)",
+						year: 1976,
+						genres: ["country rock", "soft rock", "folk rock"],
+						sale: 44000000,
+					}
 				],
 			}
 		}
@@ -293,29 +293,29 @@ console.log (ourTeam.members[0].favorites.favMovies);
 for (const addRev of ourTeam.members) {
 	for (let i = 0; i < addRev.favorites.favMovies.length; i++){
 		if(addRev.favorites.favMovies[i].title == "The Usual Suspects"){
-			addRev.favorites.favMovies[i].review = "Usual cool"
+			addRev.favorites.favMovies[i].review = "The movie presents an attempt by the authorities to catch people involved in a robbery. Among the suspects is a highly intelligent man gifted with a special talent for devising ingenious plans to mislead bankers and the police.";
 		}else if(addRev.favorites.favMovies[i].title == "Se7en"){
-			addRev.favorites.favMovies[i].review = "Se7en cool"
+			addRev.favorites.favMovies[i].review = "A serial killer with a brilliant mind acts with the 7 deadly sins as reasons for committing crimes and starts playing with two detectives who are trying to catch him.";
 		}else if(addRev.favorites.favMovies[i].title == "The Silence of the Lambs"){
-			addRev.favorites.favMovies[i].review = "The Silence of the Lambs cool"
+			addRev.favorites.favMovies[i].review = "It is a psychological movie with a manipulative cannibal killer who helps catch another serial killer. During the movie, a series of clues appear that force you to think.";
 		}else if(addRev.favorites.favMovies[i].title == "Forrest Gump"){
-			addRev.favorites.favMovies[i].review = "Forrest Gump cool"
+			addRev.favorites.favMovies[i].review = "The film depicts the events in the life of an Alabama man with an IQ of 75, whose only wish is to be reunited with his childhood girlfriend. It's a good movie for any age and the main character acted almost perfectly and got the Oscar for this role.";
 		}else if(addRev.favorites.favMovies[i].title == "The Fate of the Furious"){
-			addRev.favorites.favMovies[i].review = "The Fate of the Furious wallows in inanities with about the same frequency as it delivers excitement, and it largely succeeds as a breezy and engaging lark."
+			addRev.favorites.favMovies[i].review = "The Fate of the Furious wallows in inanities with about the same frequency as it delivers excitement, and it largely succeeds as a breezy and engaging lark.";
 		}else if(addRev.favorites.favMovies[i].title == "Need for Speed"){
-			addRev.favorites.favMovies[i].review = "This movie delivers exactly what it set out to deliver. If you like fast and beautiful cars, this one is for you!"
+			addRev.favorites.favMovies[i].review = "This movie delivers exactly what it set out to deliver. If you like fast and beautiful cars, this one is for you!";
 		}else if(addRev.favorites.favMovies[i].title == "Baby Driver"){
-			addRev.favorites.favMovies[i].review = "baby Driver is an utterly addictive whimsical comedy that is (in my personal opinion) the best movie facing 2017 so far!"
+			addRev.favorites.favMovies[i].review = "baby Driver is an utterly addictive whimsical comedy that is (in my personal opinion) the best movie facing 2017 so far!";
 		}else if(addRev.favorites.favMovies[i].title == "Our Last Summer"){
-			addRev.favorites.favMovies[i].review = "The Last Summer is an enjoyable experience, after the movie I am left with a good feeling of joy.It is a summer movie for everyone to watch and highly recommended for this summer vacation"
+			addRev.favorites.favMovies[i].review = "The Last Summer is an enjoyable experience, after the movie I am left with a good feeling of joy.It is a summer movie for everyone to watch and highly recommended for this summer vacation";
 		}else if(addRev.favorites.favMovies[i].title == "The Breakfast Club"){
-			addRev.favorites.favMovies[i].review = "This movie is one of the chillest and most straight forward movies ever. "
+			addRev.favorites.favMovies[i].review = "This movie is one of the chillest and most straight forward movies ever.";
 		}else if(addRev.favorites.favMovies[i].title == "American Beauty"){
-			addRev.favorites.favMovies[i].review = "No matter how hard life, you can always find its hidden beauty. "
+			addRev.favorites.favMovies[i].review = "No matter how hard life, you can always find its hidden beauty. ";
 		}else if(addRev.favorites.favMovies[i].title == "Inglourious Basterds"){
-			addRev.favorites.favMovies[i].review = "An absolutely marvelous film. I could watch it countless times and never become bored of the ingenious storyline. "
+			addRev.favorites.favMovies[i].review = "An absolutely marvelous film. I could watch it countless times and never become bored of the ingenious storyline. ";
 		}else if(addRev.favorites.favMovies[i].title == "Frozen"){
-			addRev.favorites.favMovies[i].review = "Based on the fairy tale “The Snow Queen” by Hans Christian Anderson and is a project in the works since the beginnings of Disney. This is hands down one of the best musicals Disney has created."
+			addRev.favorites.favMovies[i].review = "Based on the fairy tale “The Snow Queen” by Hans Christian Anderson and is a project in the works since the beginnings of Disney. This is hands down one of the best musicals Disney has created.";
 	}	
   }
 }
@@ -324,17 +324,17 @@ for (const addRev of ourTeam.members) {
 for (const addRev of ourTeam.members) {
 	for (let i = 0; i < addRev.favorites.favBooks.length; i++){
 		if(addRev.favorites.favBooks[i].title == "Urzeala tronurilor"){
-			addRev.favorites.favBooks[i].review = "Game of Thrones (1996) is the first book in the A Song of Ice and Fire series, a fantasy epic written by George R.R. Martin."
+			addRev.favorites.favBooks[i].review = "Game of Thrones (1996) is the first book in the A Song of Ice and Fire series, a fantasy epic written by George R.R. Martin.";
 		}else if(addRev.favorites.favBooks[i].title == "Stăpânul inelelor"){
-			addRev.favorites.favBooks[i].review = "It's the kind of reading we all need to have in our library. Children, adults, teenagers, it doesn't matter which category you fall into, you can read this book at any time and at any time that will keep you hooked."
+			addRev.favorites.favBooks[i].review = "It's the kind of reading we all need to have in our library. Children, adults, teenagers, it doesn't matter which category you fall into, you can read this book at any time and at any time that will keep you hooked.";
 		}else if(addRev.favorites.favBooks[i].title == "Jane Eyre"){
 			addRev.favorites.favBooks[i].review = "Certainly one of the best novels ever written."
 		}else if(addRev.favorites.favBooks[i].title == "Uncle Tom's Cabin"){
 			addRev.favorites.favBooks[i].review = "Uncle Tom's Cabin cool book"
-		}else if(addRev.favorites.favBooks[i].title == "Uncle Tom’s Cabin is a wonderfully forward-thinking book full of optimism, hope and one that captures the simple and honest nature that comes with a genuine hero who is faced with tyranny. "){
-			addRev.favorites.favBooks[i].review = "The Namesake cool book"
+		}else if(addRev.favorites.favBooks[i].title == "The Namesake"){
+			addRev.favorites.favBooks[i].review = "The Namesake tells the story of the Ganguli family. Most of the novel centers on Gogol and his life as he tries to come to terms with his identity. For most of his childhood and adolescence, he struggles with accepting his name.";
 		}else if(addRev.favorites.favBooks[i].title == "Norse Mythology"){
-			addRev.favorites.favBooks[i].review = "Norse Mythology cool book"
+			addRev.favorites.favBooks[i].review = "Norse mythology consists of nine worlds all surrounding a central cosmological tree, Yggdrasil. All beings live in these nine circles - the Viking gods live in the celestial realm of Asgard, humanity lives in Midgard, and the other worlds are inhabited by beings such as elves, giants, and dwarves.";
 	}
   }
 }
@@ -343,17 +343,17 @@ for (const addRev of ourTeam.members) {
 for (const addRev of ourTeam.members) {
 	for (let i = 0; i < addRev.favorites.favSongs.length; i++){
 		if(addRev.favorites.favSongs[i].title == "The River Flows In You"){
-			addRev.favorites.favSongs[i].review = "If you're an aspiring pianist or just enjoy the sound of a simple, beautiful melody, you will have likely come across Yiruma's lyrical piano piece, 'River Flows in You' (2001)!"
+			addRev.favorites.favSongs[i].review = "If you're an aspiring pianist or just enjoy the sound of a simple, beautiful melody, you will have likely come across Yiruma's lyrical piano piece, 'River Flows in You' (2001)!";
 		}else if(addRev.favorites.favSongs[i].title == "Dreamer"){
-			addRev.favorites.favSongs[i].review = "This song is a motivation to dream, not to give up on your dreams : I can promise you, Yes, I am a dreamer too. We are dreamers together, Always and forever!"
-		}else if(addRev.favorites.favSongs[i].title == "Yes to heaven"){
-			addRev.favorites.favSongs[i].review = "This song sounds like a summer day"
-		}else if(addRev.favorites.favSongs[i].title == "10:35"){
-			addRev.favorites.favSongs[i].review = "It's energizing!"
-		}else if(addRev.favorites.favSongs[i].title == ""){
-			addRev.favorites.favSongs[i].review = "The Namesake cool book"
-		}else if(addRev.favorites.favSongs[i].title == "Norse Mythology"){
-			addRev.favorites.favSongs[i].review = "Norse Mythology cool book"
+			addRev.favorites.favSongs[i].review = "This song is a motivation to dream, not to give up on your dreams : I can promise you, Yes, I am a dreamer too. We are dreamers together, Always and forever!";
+		}else if(addRev.favorites.favSongs[i].title == "Song1"){
+			addRev.favorites.favSongs[i].review = "Jane Eyre cool book"
+		}else if(addRev.favorites.favSongs[i].title == "Uncle Tom's Cabin"){
+			addRev.favorites.favSongs[i].review = "Uncle Tom's Cabin cool book"
+		}else if(addRev.favorites.favSongs[i].title == "Tracy Chapman"){
+			addRev.favorites.favSongs[i].review = "I like this kind of music and especially Tracy Chapman for her simplicity, vocal ability and lyrical content.";
+		}else if(addRev.favorites.favSongs[i].title == "Their Greatest Hits (1971 - 1975)"){
+			addRev.favorites.favSongs[i].review = "The songs in the compilation are melodic, immediately engaging, and lyrically consistent, so, these songs make up a collection consistent in mood and identity.";
 	}
   }
 }
