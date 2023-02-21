@@ -487,6 +487,60 @@ for (let i = 0; i < ourTeam.members.length; i++) {
 console.log(commonGenres);
 
 
+// Choose theme for each Member
+
+
+const ionutColor = {
+	primary: {
+		red: 255, 
+		green: 255,
+		blue: 0,
+	},
+	secondary: {
+		red: 204, 
+		green: 102,
+		blue: 255,
+	}
+}
+
+const lauraColor = {
+	primary: {
+		red: 204, 
+		green: 153,
+		blue: 255,
+	},
+	secondary: {
+		red: 204, 
+		green: 0,
+		blue: 153,
+	}
+}
+
+const danColor = {
+	primary: {
+		red: 0, 
+		green: 204,
+		blue: 102,
+	},
+	secondary: {
+		red: 0, 
+		green: 153,
+		blue: 255,
+	}
+}
+
+for (let i = 0; i < ourTeam.members.length; i++) {
+	if (ourTeam.members[i].name == "Buzila Ionut") {
+		ourTeam.members[i].colors = ionutColor;
+	}else if (ourTeam.members[i].name == "Ciobanu Laura") {
+		ourTeam.members[i].colors = lauraColor;
+	}else if (ourTeam.members[i].name == "Cojocaru Dan") {
+		ourTeam.members[i].colors = danColor;
+	}
+	console.log(ourTeam.members[i].colors);
+}
+
+
 
 	// DON'T MODIFY THE CODE BELOW THIS LINE
 
