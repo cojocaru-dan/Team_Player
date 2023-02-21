@@ -118,7 +118,7 @@ const ourTeam = {
 					directors: "John Hughes",
 					writers: "John Hughes",
 					stars: "Emilio Estevez", "Judd Nelson", "Molly Ringwald",
-					genres: "comedy", "drama"
+					genres: "comedy", "drama",
 				},
 				{
 					title: "American Beauty",
@@ -138,7 +138,7 @@ const ourTeam = {
 					directors: "Quentin Tarantino",
 					writers: "Quentin Tarantino",
 					stars: "Brad Pitt", "Diane Kruger", "Eli Roth",
-					genres: "adventure", "drama", "war"
+					genres: "adventure", "drama", "war",
 				},
 				{
 					title: "Frozen",
@@ -148,7 +148,7 @@ const ourTeam = {
 					directors: "Chris Buck", "Jennifer Lee",
 					writers: "Jennifer Lee (screenplay)", "Hans Christian Andersen (story inspired by 'The Snow Queen'",
 					stars: "Kristen Bell(voice)", "Idina Menzel(voice)", "Jonathan Groff(voice)",
-					genres: "animation", "adventure", "comedy"
+					genres: "animation", "adventure", "comedy",
 				}, 
 			],
 				favBooks:  [
@@ -521,15 +521,6 @@ const ionutColor = {
 
 const lauraColor = {
 	primary: {
-<<<<<<< HEAD
-		red: 204, 
-		green: 0,
-		blue: 204,
-	},
-	secondary: {
-		red: 204, 
-		green: 153,
-=======
 		red: 76, 
 		green: 0,
 		blue: 153,
@@ -537,7 +528,6 @@ const lauraColor = {
 	secondary: {
 		red: 255, 
 		green: 204,
->>>>>>> 86f434d707c1a541425f62373ff15b4423f4ba55
 		blue: 255,
 	}
 }
