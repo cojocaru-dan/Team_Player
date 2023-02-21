@@ -76,6 +76,22 @@ const ourTeam = {
 						characters: "Sauron, Galadriel, Gandalf, Aragorn, Frodo Baggins"     
 					}
 				],
+				favSongs: [
+					{
+						artist: "Yiruma",
+						title: "The River Flows In You",
+						year: 2017,
+						genres: ["dance", "electonic"],
+						iLikeIt : true,
+					},
+					{
+						artist: "Axwell & Ingrosso",
+						title: "Dreamer",
+						year: 2017,
+						genres: ["Dance-pop"],
+						iLikeIt : true,
+					},
+				],
 			}
 		},
 		{
@@ -136,7 +152,23 @@ const ourTeam = {
 					"age": 171,
 					"characters": ["Uncle Tom", "Miss Ophelia", "Augustine St. Clare", "Emily Shelby", "Eliza", "Quimbo", "Simon Legree", "Evangeline St. Clare", "Arthur Shelby", "George Shelby", "Topsy"]
 				},
-			]
+			],
+			favSongs: [
+				{
+					artist: "Michael Jackson",
+					title: "Thriller",
+					year: 1982,
+					genres: ["pop", "post-disco", "funk", "rock"],
+					iLikeIt : false,
+				},
+				{
+					artist: "AC/DC",
+					title: "Back in Black",
+					year: 1980,
+					genres: ["hard rock"],
+					iLikeIt : false,
+				},
+			],
 			}
 		},
 		{
@@ -214,6 +246,22 @@ const ourTeam = {
 						characters: ["Odin", "Thor", "Loki", "Freya"]
 					}
 				],
+				favSongs: [
+					{
+						artist: "Michael Jackson",
+						title: "Thriller",
+						year: 1982,
+						genres: ["pop", "post-disco", "funk", "rock"],
+						iLikeIt : false,
+					},
+					{
+						artist: "AC/DC",
+						title: "Back in Black",
+						year: 1980,
+						genres: ["hard rock"],
+						iLikeIt : false,
+					},
+				],
 			}
 		}
 	]
@@ -249,13 +297,13 @@ for (const addRev of ourTeam.members) {
 		}else if(addRev.favorites.favMovies[i].title == "Forrest Gump"){
 			addRev.favorites.favMovies[i].review = "Forrest Gump cool"
 		}else if(addRev.favorites.favMovies[i].title == "The Fate of the Furious"){
-			addRev.favorites.favMovies[i].review = "The Fate of the Furious cool"
+			addRev.favorites.favMovies[i].review = "The Fate of the Furious wallows in inanities with about the same frequency as it delivers excitement, and it largely succeeds as a breezy and engaging lark."
 		}else if(addRev.favorites.favMovies[i].title == "Need for Speed"){
-			addRev.favorites.favMovies[i].review = "Need for Speed cool"
+			addRev.favorites.favMovies[i].review = "This movie delivers exactly what it set out to deliver. If you like fast and beautiful cars, this one is for you!"
 		}else if(addRev.favorites.favMovies[i].title == "Baby Driver"){
-			addRev.favorites.favMovies[i].review = "Baby Driver cool"
+			addRev.favorites.favMovies[i].review = "baby Driver is an utterly addictive whimsical comedy that is (in my personal opinion) the best movie facing 2017 so far!"
 		}else if(addRev.favorites.favMovies[i].title == "Our Last Summer"){
-			addRev.favorites.favMovies[i].review = "Our Last Summer cool"
+			addRev.favorites.favMovies[i].review = "The Last Summer is an enjoyable experience, after the movie I am left with a good feeling of joy.It is a summer movie for everyone to watch and highly recommended for this summer vacation"
 		}else if(addRev.favorites.favMovies[i].title == "The Breakfast Club"){
 			addRev.favorites.favMovies[i].review = "The Breakfast Club cool"
 		}else if(addRev.favorites.favMovies[i].title == "American Beauty"){
@@ -272,9 +320,9 @@ for (const addRev of ourTeam.members) {
 for (const addRev of ourTeam.members) {
 	for (let i = 0; i < addRev.favorites.favBooks.length; i++){
 		if(addRev.favorites.favBooks[i].title == "Urzeala tronurilor"){
-			addRev.favorites.favBooks[i].review = "Urzeala tronurilor cool book"
+			addRev.favorites.favBooks[i].review = "Game of Thrones (1996) is the first book in the A Song of Ice and Fire series, a fantasy epic written by George R.R. Martin."
 		}else if(addRev.favorites.favBooks[i].title == "Stăpânul inelelor"){
-			addRev.favorites.favBooks[i].review = "Stăpânul inelelor cool book"
+			addRev.favorites.favBooks[i].review = "It's the kind of reading we all need to have in our library. Children, adults, teenagers, it doesn't matter which category you fall into, you can read this book at any time and at any time that will keep you hooked."
 		}else if(addRev.favorites.favBooks[i].title == "Jane Eyre"){
 			addRev.favorites.favBooks[i].review = "Jane Eyre cool book"
 		}else if(addRev.favorites.favBooks[i].title == "Uncle Tom's Cabin"){
@@ -283,6 +331,25 @@ for (const addRev of ourTeam.members) {
 			addRev.favorites.favBooks[i].review = "The Namesake cool book"
 		}else if(addRev.favorites.favBooks[i].title == "Norse Mythology"){
 			addRev.favorites.favBooks[i].review = "Norse Mythology cool book"
+	}
+  }
+}
+
+// Songs review
+for (const addRev of ourTeam.members) {
+	for (let i = 0; i < addRev.favorites.favSongs.length; i++){
+		if(addRev.favorites.favSongs[i].title == "The River Flows In You"){
+			addRev.favorites.favSongs[i].review = "If you're an aspiring pianist or just enjoy the sound of a simple, beautiful melody, you will have likely come across Yiruma's lyrical piano piece, 'River Flows in You' (2001)!"
+		}else if(addRev.favorites.favSongs[i].title == "Dreamer"){
+			addRev.favorites.favSongs[i].review = "This song is a motivation to dream, not to give up on your dreams : I can promise you, Yes, I am a dreamer too. We are dreamers together, Always and forever!"
+		}else if(addRev.favorites.favSongs[i].title == "Song1"){
+			addRev.favorites.favSongs[i].review = "Jane Eyre cool book"
+		}else if(addRev.favorites.favSongs[i].title == "Uncle Tom's Cabin"){
+			addRev.favorites.favSongs[i].review = "Uncle Tom's Cabin cool book"
+		}else if(addRev.favorites.favSongs[i].title == "The Namesake"){
+			addRev.favorites.favSongs[i].review = "The Namesake cool book"
+		}else if(addRev.favorites.favSongs[i].title == "Norse Mythology"){
+			addRev.favorites.favSongs[i].review = "Norse Mythology cool book"
 	}
   }
 }
@@ -301,8 +368,8 @@ for (const iterator of ourTeam.members) {
 	}
 }
 console.log(ourTeam.members[0].favorites.favBooks);
-console.log(ourTeam.members[1].favorites.favBooks);
-console.log(ourTeam.members[2].favorites.favBooks);
+console.log(ourTeam.members[0].favorites.favMovies);
+console.log(ourTeam.members[0].favorites.favSongs);
 // console.log(ourTeam.members[0].favorites.favBooks);
 
 
