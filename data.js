@@ -505,27 +505,27 @@ const ionutColor = {
 
 const lauraColor = {
 	primary: {
-		red: 204, 
-		green: 153,
-		blue: 255,
-	},
-	secondary: {
-		red: 204, 
+		red: 76, 
 		green: 0,
 		blue: 153,
+	},
+	secondary: {
+		red: 255, 
+		green: 204,
+		blue: 255,
 	}
 }
 
 const danColor = {
 	primary: {
-		red: 0, 
-		green: 204,
-		blue: 102,
+		red: 106, 
+		green: 251,
+		blue: 148,
 	},
 	secondary: {
 		red: 0, 
-		green: 153,
-		blue: 255,
+		green: 0,
+		blue: 84,
 	}
 }
 
