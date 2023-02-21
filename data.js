@@ -128,7 +128,7 @@ const ourTeam = {
 					directors: ["Sam Mendes"],
 					writers: ["Alan Ball"],
 					stars: ["Kevin Spacey", "Annette Bening", "Thora Birch"],
-					genres: "drama"
+					genres: ["drama"]
 				},
 				{
 					title: "Inglourious Basterds",
