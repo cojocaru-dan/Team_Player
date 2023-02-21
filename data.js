@@ -408,7 +408,7 @@ console.log("Our team average age is:", Math.floor(averageAge));
 
 // Average coding level
 
-let averageCodingLevel = Math.floor(0);
+let averageCodingLevel = 0;
 let totalLevel = 0;
 let string = "";
 for ( let i = 0; i < ourTeam.members.length; i ++) {
@@ -422,8 +422,8 @@ for ( let i = 0; i < ourTeam.members.length; i ++) {
 		string ="Our team coding level is senior: ";
 	}
 }
-
-console.log(Math.floor(averageCodingLevel));
+averageCodingLevel = Math.floor(averageCodingLevel);
+console.log(averageCodingLevel);
 
 // youngestMember
 let youngestMember = ourTeam.members[0];
@@ -433,7 +433,7 @@ for (let i = 0; i < ourTeam.members.length; i++) {
 		youngestMember = ourTeam.members[i];
 	}
 }
-console.log("The youngest member of our team is:", youngestMember.name);
+ console.log("The youngest member of our team is:", youngestMember.name);
 
 // oldestMember
 let oldestMember = ourTeam.members[0];
