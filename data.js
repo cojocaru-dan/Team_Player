@@ -24,7 +24,7 @@ const ourTeam = {
 						title: ["The Fate of the Furious"],
 					yearOfRelease: 2017, 
 					imbdRating: 6.6 ,
-					shortDescription: "Dominic Toreto,he has to betray his team to save his child from the hands of an enemy, he has to work for him, in the end the team helps him recover the child and liquidate the criminals!",
+					description: "Dominic Toreto,he has to betray his team to save his child from the hands of an enemy, he has to work for him, in the end the team helps him recover the child and liquidate the criminals!",
 					directors:["F.Gary Gray"],
 					writers: ["Chris Morgan"],
 					stars: ["Vin Diesel", "Dwayne Johnson", "Jason Statham "],
@@ -33,7 +33,7 @@ const ourTeam = {
 						title: "Need for Speed",
 					yearOfRelease: 2014,
 					imbdRating: 6.4,
-					shortDescription: "Fresh from prison, a street racer who was framed by a wealthy business associate joins a cross-country race with revenge in mind. His ex-partner, learning of the plan, places a massive bounty on his head as the race begins.",
+					description: "Fresh from prison, a street racer who was framed by a wealthy business associate joins a cross-country race with revenge in mind. His ex-partner, learning of the plan, places a massive bounty on his head as the race begins.",
 					directors: ["Scott Waugh"],
 					writers: ["George Gatins", "John Gatins."],
 					stars: ["Aaron Paul", "Imogen Poots", "Dominic Cooper"],
@@ -42,7 +42,7 @@ const ourTeam = {
 						title: "Baby Driver",	
 					yearOfRelease: 2017,	
 					imbdRating: 7.6,	
-					shortDescription: "After being coerced into working for a crime boss, a young getaway driver finds himself taking part in a heist doomed to fail.",
+					description: "After being coerced into working for a crime boss, a young getaway driver finds himself taking part in a heist doomed to fail.",
 					directors: ["Edgar Wright"],
 					writers: ["Edgar Wright"],
 					stars: ["Ansel Elgort", "Jon Bernthal", "Eiza González"],
@@ -51,7 +51,7 @@ const ourTeam = {
 						title: "Our Last Summer",
 					yearOfRelease: 2018,
 					imbdRating: 7.5,
-					shortDescription: "A group of college graduates go on one final vacation together. Just before the trip, Nathan gets dumped by his girlfriend and gets tricked in to going on the trip without knowing she'll be there. Hilarity ensues.",
+					description: "A group of college graduates go on one final vacation together. Just before the trip, Nathan gets dumped by his girlfriend and gets tricked in to going on the trip without knowing she'll be there. Hilarity ensues.",
 					directors: ["Thomas Finn", "Joseph Voce"],
 					writers: ["Thomas Finn", "Joseph Voce"],
 					stars: ["KJ Apa" , "Tyler Posey "],
@@ -95,22 +95,22 @@ const ourTeam = {
 			favorites: {
 				favMovies: [
 					{
-					"title": "The Breakfast Club",
-					"year": 1985,
-					"rating": 7.8,
-					"description": "Five high school students meet in Saturday detention and discover how they have a lot more in common than they thought."
+					title: "The Breakfast Club",
+					year: 1985,
+					rating: 7.8,
+					description: "Five high school students meet in Saturday detention and discover how they have a lot more in common than they thought."
 				},
 				{
-					"title": "American Beauty",
-					"year": 1999,
-					"rating": 8.4,
-					"description": "A sexually frustrated suburban father has a mid-life crisis after becoming infatuated with his daughter's best friend."
+					title: "American Beauty",
+					year: 1999,
+					rating: 8.4,
+					description: "A sexually frustrated suburban father has a mid-life crisis after becoming infatuated with his daughter's best friend."
 				},
 				{
-					"title": "Inglourious Basterds",
-					"year": 2009,
-					"rating": 8.3,
-					"description": "In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans for the same."
+					title: "Inglourious Basterds",
+					year: 2009,
+					rating: 8.3,
+					description: "In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans for the same."
 				},
 				{
 					"title": "Frozen",
@@ -136,7 +136,21 @@ const ourTeam = {
 					"age": 171,
 					"characters": ["Uncle Tom", "Miss Ophelia", "Augustine St. Clare", "Emily Shelby", "Eliza", "Quimbo", "Simon Legree", "Evangeline St. Clare", "Arthur Shelby", "George Shelby", "Topsy"]
 				},
-			]
+			],
+				favSongs: [
+				{
+					artist: "Lana del Rey",
+					title: "Yes to heaven",
+					year: 2013,
+					genres: ["dream pop"],
+				},
+				{
+					artist: "Tiesto",
+					title: "10:35",
+					year: 2023,
+					genres: ["dance", "electro pop"],
+				},
+		]
 			}
 		},
 		{
@@ -234,6 +248,12 @@ for (const member of ourTeam.members) {
 }
 
 
+// Add new keys and values and remove a few one
+  
+
+delete ourTeam["members"][0].favorites["favMovies"][0]["description"];
+
+console.log (ourTeam.members[0].favorites.favMovies);
 
 // Team Members
 
