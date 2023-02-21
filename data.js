@@ -248,19 +248,19 @@ const ourTeam = {
 				],
 				favSongs: [
 					{
-						artist: "Michael Jackson",
-						title: "Thriller",
-						year: 1982,
-						genres: ["pop", "post-disco", "funk", "rock"],
-						iLikeIt : false,
+						artist: "Tracy Chapman",
+						title: "Tracy Chapman",
+						year: 1988,
+						genres: ["folk rock"],
+						sale: 20000000
 					},
 					{
-						artist: "AC/DC",
-						title: "Back in Black",
-						year: 1980,
-						genres: ["hard rock"],
-						iLikeIt : false,
-					},
+						artist: "Eagles",
+						title: "Their Greatest Hits (1971 - 1975)",
+						year: 1976,
+						genres: ["country rock", "soft rock", "folk rock"],
+						sale: 44000000,
+					}
 				],
 			}
 		}
@@ -289,13 +289,13 @@ for (const member of ourTeam.members) {
 for (const addRev of ourTeam.members) {
 	for (let i = 0; i < addRev.favorites.favMovies.length; i++){
 		if(addRev.favorites.favMovies[i].title == "The Usual Suspects"){
-			addRev.favorites.favMovies[i].review = "Usual cool"
+			addRev.favorites.favMovies[i].review = "The movie presents an attempt by the authorities to catch people involved in a robbery. Among the suspects is a highly intelligent man gifted with a special talent for devising ingenious plans to mislead bankers and the police."
 		}else if(addRev.favorites.favMovies[i].title == "Se7en"){
-			addRev.favorites.favMovies[i].review = "Se7en cool"
+			addRev.favorites.favMovies[i].review = "A serial killer with a brilliant mind acts with the 7 deadly sins as reasons for committing crimes and starts playing with two detectives who are trying to catch him."
 		}else if(addRev.favorites.favMovies[i].title == "The Silence of the Lambs"){
-			addRev.favorites.favMovies[i].review = "The Silence of the Lambs cool"
+			addRev.favorites.favMovies[i].review = "It is a psychological movie with a manipulative cannibal killer who helps catch another serial killer. During the movie, a series of clues appear that force you to think."
 		}else if(addRev.favorites.favMovies[i].title == "Forrest Gump"){
-			addRev.favorites.favMovies[i].review = "Forrest Gump cool"
+			addRev.favorites.favMovies[i].review = "The film depicts the events in the life of an Alabama man with an IQ of 75, whose only wish is to be reunited with his childhood girlfriend. It's a good movie for any age and the main character acted almost perfectly and got the Oscar for this role."
 		}else if(addRev.favorites.favMovies[i].title == "The Fate of the Furious"){
 			addRev.favorites.favMovies[i].review = "The Fate of the Furious wallows in inanities with about the same frequency as it delivers excitement, and it largely succeeds as a breezy and engaging lark."
 		}else if(addRev.favorites.favMovies[i].title == "Need for Speed"){
@@ -328,9 +328,9 @@ for (const addRev of ourTeam.members) {
 		}else if(addRev.favorites.favBooks[i].title == "Uncle Tom's Cabin"){
 			addRev.favorites.favBooks[i].review = "Uncle Tom's Cabin cool book"
 		}else if(addRev.favorites.favBooks[i].title == "The Namesake"){
-			addRev.favorites.favBooks[i].review = "The Namesake cool book"
+			addRev.favorites.favBooks[i].review = "The Namesake tells the story of the Ganguli family. Most of the novel centers on Gogol and his life as he tries to come to terms with his identity. For most of his childhood and adolescence, he struggles with accepting his name."
 		}else if(addRev.favorites.favBooks[i].title == "Norse Mythology"){
-			addRev.favorites.favBooks[i].review = "Norse Mythology cool book"
+			addRev.favorites.favBooks[i].review = "Norse mythology consists of nine worlds all surrounding a central cosmological tree, Yggdrasil. All beings live in these nine circles - the Viking gods live in the celestial realm of Asgard, humanity lives in Midgard, and the other worlds are inhabited by beings such as elves, giants, and dwarves."
 	}
   }
 }
@@ -346,10 +346,10 @@ for (const addRev of ourTeam.members) {
 			addRev.favorites.favSongs[i].review = "Jane Eyre cool book"
 		}else if(addRev.favorites.favSongs[i].title == "Uncle Tom's Cabin"){
 			addRev.favorites.favSongs[i].review = "Uncle Tom's Cabin cool book"
-		}else if(addRev.favorites.favSongs[i].title == "The Namesake"){
-			addRev.favorites.favSongs[i].review = "The Namesake cool book"
-		}else if(addRev.favorites.favSongs[i].title == "Norse Mythology"){
-			addRev.favorites.favSongs[i].review = "Norse Mythology cool book"
+		}else if(addRev.favorites.favSongs[i].title == "Tracy Chapman"){
+			addRev.favorites.favSongs[i].review = "I like this kind of music and especially Tracy Chapman for her simplicity, vocal ability and lyrical content."
+		}else if(addRev.favorites.favSongs[i].title == "Their Greatest Hits (1971 - 1975)"){
+			addRev.favorites.favSongs[i].review = "The songs in the compilation are melodic, immediately engaging, and lyrically consistent, so, these songs make up a collection consistent in mood and identity."
 	}
   }
 }
