@@ -114,43 +114,59 @@ const ourTeam = {
 					title: "The Breakfast Club",
 					year: 1985,
 					rating: 7.8,
-					description: "Five high school students meet in Saturday detention and discover how they have a lot more in common than they thought."
+					description: "Five high school students meet in Saturday detention and discover how they have a lot more in common than they thought.",
+					directors: "John Hughes",
+					writers: "John Hughes",
+					stars: "Emilio Estevez", "Judd Nelson", "Molly Ringwald",
+					genres: "comedy", "drama"
 				},
 				{
 					title: "American Beauty",
 					year: 1999,
 					rating: 8.4,
-					description: "A sexually frustrated suburban father has a mid-life crisis after becoming infatuated with his daughter's best friend."
+					description: "A sexually frustrated suburban father has a mid-life crisis after becoming infatuated with his daughter's best friend.",
+					directors: "Sam Mendes",
+					writers: "Alan Ball",
+					stars: "Kevin Spacey", "Annette Bening", "Thora Birch",
+					genres: "drama"
 				},
 				{
 					title: "Inglourious Basterds",
 					year: 2009,
 					rating: 8.3,
-					description: "In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans for the same."
+					description: "In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans for the same.",
+					directors: "Quentin Tarantino",
+					writers: "Quentin Tarantino",
+					stars: "Brad Pitt", "Diane Kruger", "Eli Roth",
+					genres: "adventure", "drama", "war"
 				},
 				{
-					"title": "Frozen",
-					"year": 2013,
-					"rating": 7.4,
-					"description": "When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition."
+					title: "Frozen",
+					year: 2013,
+					rating: 7.4,
+					description: "When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.",
+					directors: "Chris Buck", "Jennifer Lee",
+					writers: "Jennifer Lee (screenplay)", "Hans Christian Andersen (story inspired by 'The Snow Queen'",
+					stars: "Kristen Bell(voice)", "Idina Menzel(voice)", "Jonathan Groff(voice)",
+					genres: "animation", "adventure", "comedy"
 				}, 
 			],
 				favBooks:  [
 					{
-					"title": "Jane Eyre ",
-					"author": "Charlotte Brontë",
-					"year": 1847,
-					"isNewerThan2000": false,
-					"age": 176,
-					"characters": ["Jane Eyre", "Mrs Sarah Reed", "Bertha Mason", "Grace Poole", "St. John Rivers", "Edward Rochester", "Edward Rochester", "Mr. Brocklehurst", "Blanche Ingram"]
+					title: "Jane Eyre ",
+					author: "Charlotte Brontë",
+					year: 1847,
+					isNewerThan2000: false,
+					age: 176,
+					characters: ["Jane Eyre", "Mrs Sarah Reed", "Bertha Mason", "Grace Poole", "St. John Rivers", "Edward Rochester", "Edward Rochester", "Mr. Brocklehurst", "Blanche Ingram"]
 				},
 				{
-					"title": "Uncle Tom's Cabin",
-					"author" : "Harriet Beecher Stowe",
-					"year": 1852,
-					"isNewerThan2000": false,
-					"age": 171,
-					"characters": ["Uncle Tom", "Miss Ophelia", "Augustine St. Clare", "Emily Shelby", "Eliza", "Quimbo", "Simon Legree", "Evangeline St. Clare", "Arthur Shelby", "George Shelby", "Topsy"]
+					title: "Uncle Tom's Cabin",
+					author : "Harriet Beecher Stowe",
+					year: 1852,
+					isNewerThan2000: false,
+					age: 171,
+					characters: ["Uncle Tom", "Miss Ophelia", "Augustine St. Clare", "Emily Shelby", "Eliza", "Quimbo", "Simon Legree", "Evangeline St. Clare", "Arthur Shelby", "George Shelby", "Topsy"]
 				},
 			],
 				favSongs: [
@@ -506,13 +522,13 @@ const ionutColor = {
 const lauraColor = {
 	primary: {
 		red: 204, 
-		green: 153,
-		blue: 255,
+		green: 0,
+		blue: 204,
 	},
 	secondary: {
 		red: 204, 
-		green: 0,
-		blue: 153,
+		green: 153,
+		blue: 255,
 	}
 }
 
