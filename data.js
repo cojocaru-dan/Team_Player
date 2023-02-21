@@ -330,7 +330,7 @@ for (const addRev of ourTeam.members) {
 		}else if(addRev.favorites.favBooks[i].title == "Jane Eyre"){
 			addRev.favorites.favBooks[i].review = "Certainly one of the best novels ever written."
 		}else if(addRev.favorites.favBooks[i].title == "Uncle Tom's Cabin"){
-			addRev.favorites.favBooks[i].review = "Uncle Tom's Cabin cool book"
+			addRev.favorites.favBooks[i].review = "Excellent book! Wish I had read earlier in life. A must read for all. Illuminating."
 		}else if(addRev.favorites.favBooks[i].title == "The Namesake"){
 			addRev.favorites.favBooks[i].review = "The Namesake tells the story of the Ganguli family. Most of the novel centers on Gogol and his life as he tries to come to terms with his identity. For most of his childhood and adolescence, he struggles with accepting his name.";
 		}else if(addRev.favorites.favBooks[i].title == "Norse Mythology"){
@@ -346,10 +346,10 @@ for (const addRev of ourTeam.members) {
 			addRev.favorites.favSongs[i].review = "If you're an aspiring pianist or just enjoy the sound of a simple, beautiful melody, you will have likely come across Yiruma's lyrical piano piece, 'River Flows in You' (2001)!";
 		}else if(addRev.favorites.favSongs[i].title == "Dreamer"){
 			addRev.favorites.favSongs[i].review = "This song is a motivation to dream, not to give up on your dreams : I can promise you, Yes, I am a dreamer too. We are dreamers together, Always and forever!";
-		}else if(addRev.favorites.favSongs[i].title == "Song1"){
-			addRev.favorites.favSongs[i].review = "Jane Eyre cool book"
-		}else if(addRev.favorites.favSongs[i].title == "Uncle Tom's Cabin"){
-			addRev.favorites.favSongs[i].review = "Uncle Tom's Cabin cool book"
+		}else if(addRev.favorites.favSongs[i].title == "Yes to heaven"){
+			addRev.favorites.favSongs[i].review = "This song sounds like a summer day."
+		}else if(addRev.favorites.favSongs[i].title == "10:35"){
+			addRev.favorites.favSongs[i].review = "It's energizing!"
 		}else if(addRev.favorites.favSongs[i].title == "Tracy Chapman"){
 			addRev.favorites.favSongs[i].review = "I like this kind of music and especially Tracy Chapman for her simplicity, vocal ability and lyrical content.";
 		}else if(addRev.favorites.favSongs[i].title == "Their Greatest Hits (1971 - 1975)"){
