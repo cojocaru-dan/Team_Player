@@ -449,7 +449,8 @@ for (let i = 0; i < ourTeam.members.length; i++) {
 		youngestMember = ourTeam.members[i];
 	}
 }
- console.log("The youngest member of our team is:", youngestMember.name);
+youngestMember = youngestMember.name;
+console.log("The youngest member of our team is:", youngestMember);
 
 // oldestMember
 let oldestMember = ourTeam.members[0];
@@ -459,7 +460,8 @@ for (let i = 0; i < ourTeam.members.length; i++) {
 		oldestMember = ourTeam.members[i];
 	}
 }
-console.log("The oldest member of our team is:", oldestMember.name);
+oldestMember = oldestMember.name;
+console.log("The oldest member of our team is:", oldestMember);
 
 // From the same location
  let location = {
