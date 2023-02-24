@@ -206,7 +206,7 @@ const ourTeam = {
 						year: 1994,
 						rating: 8.8,
 						description: "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
-						directors: ["Robert Zemeckis"],
+						directors: "Robert Zemeckis",
 						writers: ["Winston Groom", "Eric Roth"],
 						stars: ["Tom Hanks", "Robin Wright", "Gary Sinise"],
 						genres: ["Drama", "Comedy", "Romance"]
@@ -369,7 +369,7 @@ for (const addRev of ourTeam.members) {
 		}else if(addRev.favorites.favSongs[i].title == "Tracy Chapman"){
 			addRev.favorites.favSongs[i].review = "I like this kind of music and especially Tracy Chapman for her simplicity, vocal ability and lyrical content.";
 		}else if(addRev.favorites.favSongs[i].title == "Their Greatest Hits (1971 - 1975)"){
-			addRev.favorites.favSongs[i].review = "The songs in the compilation are melodic, immediately engaging, and lyrically consistent, so, these songs make up a collection consistent in mood and identity.";
+			addRev.favorites.favSongs[i].review == "The songs in the compilation are melodic, immediately engaging, and lyrically consistent, so, these songs make up a collection consistent in mood and identity.";
 	}
   }
 }
@@ -417,7 +417,7 @@ console.log(totalAge);
 let averageAge = 0;
 
 for ( let i = 0; i < ourTeam.members.length; i ++) {
-	averageAge += (2023 - ourTeam.members[i].birthday.year) / 3;
+	averageAge += (2023 - ourTeam.members[i].birthday.year) / ourTeam.members.length;
 }
 
 console.log("Our team average age is:", Math.floor(averageAge));
@@ -452,6 +452,8 @@ for (let i = 0; i < ourTeam.members.length; i++) {
 youngestMember = youngestMember.name;
 console.log("The youngest member of our team is:", youngestMember);
 
+// add luna si zi
+
 // oldestMember
 let oldestMember = ourTeam.members[0];
 
@@ -469,7 +471,7 @@ console.log("The oldest member of our team is:", oldestMember);
 	Iasi: "",
 	Bucuresti: "",
 };
-
+// rescrie
 for (let i = 0; i < ourTeam.members.length; i++) {
 	let city = ourTeam.members[i].location.city ;
 	if (city === "Nasaud") {
