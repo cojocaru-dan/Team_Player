@@ -332,6 +332,7 @@ for (const addRev of ourTeam.members) {
 			addRev.favorites.favMovies[i].review = "An absolutely marvelous film. I could watch it countless times and never become bored of the ingenious storyline. ";
 		}else if(addRev.favorites.favMovies[i].title == "Frozen"){
 			addRev.favorites.favMovies[i].review = "Based on the fairy tale “The Snow Queen” by Hans Christian Anderson and is a project in the works since the beginnings of Disney. This is hands down one of the best musicals Disney has created.";
+			
 	}	
   }
 }
@@ -444,13 +445,25 @@ console.log(averageCodingLevel);
 // youngestMember
 let youngestMember = ourTeam.members[0];
 
-for (let i = 0; i < ourTeam.members.length; i++) {
+for (let i = 1; i < ourTeam.members.length; i++) {
 	if (ourTeam.members[i].birthday.year > youngestMember.birthday.year) {
 		youngestMember = ourTeam.members[i];
+	} else if (ourTeam.members[i].birthday.year === youngestMember.birthday.year) {
+		if (ourTeam.members[i].birthday.month > youngestMember.birthday.month) {
+			youngestMember = ourTeam.members[i];
+		} else if (ourTeam.members[i].birthday.month === youngestMember.birthday.month) {
+			if (ourTeam.members[i].birthday.day > youngestMember.birthday.day) {
+				youngestMember = ourTeam.members[i];
+			} else if (ourTeam.members[i].birthday.day === youngestMember.birthday.day) {
+				youngestMember = ourTeam.members[i];
+			}
+		}
 	}
 }
 youngestMember = youngestMember.name;
-console.log("The youngest member of our team is:", youngestMember);
+console.log(youngestMember);
+
+// console.log("The youngestMember member of our team is:", youngestMember);
 
 // oldestMember
 let oldestMember = ourTeam.members[0];
@@ -458,29 +471,34 @@ let oldestMember = ourTeam.members[0];
 for (let i = 0; i < ourTeam.members.length; i++) {
 	if (ourTeam.members[i].birthday.year < oldestMember.birthday.year) {
 		oldestMember = ourTeam.members[i];
+	} else if (ourTeam.members[i].birthday.year === oldestMember.birthday.year) {
+		if (ourTeam.members[i].birthday.month < oldestMember.birthday.month) {
+			oldestMember = ourTeam.members[i];
+		} else if (ourTeam.members[i].birthday.month === oldestMember.birthday.month) {
+			if (ourTeam.members[i].birthday.day < oldestMember.birthday.day) {
+				oldestMember = ourTeam.members[i];
+			} else if (ourTeam.members[i].birthday.day === oldestMember.birthday.day) {
+				oldestMember = ourTeam.members[i];
+			}
+		}
 	}
 }
+
 oldestMember = oldestMember.name;
 console.log("The oldest member of our team is:", oldestMember);
 
 // From the same location
- let location = {
-	Nasaud: "",
-	Iasi: "",
-	Bucuresti: "",
-};
+let location = {};
 
 for (let i = 0; i < ourTeam.members.length; i++) {
 	let city = ourTeam.members[i].location.city ;
-	if (city === "Nasaud") {
-		location.Nasaud += ourTeam.members[i].name + "  ";
-	}else if (city === "Iasi") {
-		location.Iasi += ourTeam.members[i].name + " ";
-	}else if (city === "Bucuresti") {
-		location.Bucuresti += ourTeam.members[i].name + " ";
+	if (!location.hasOwnProperty(city)) {
+		location[city] = ourTeam.members[i].name;
+	} else {
+		location[city] += " & " + ourTeam.members[i].name;
 	}
-	
 }
+
 console.log("Din Nasaud: " + location.Nasaud);
 console.log("Din Iasi: " + location.Iasi);
 console.log("Din Bucuresti: " + location.Bucuresti);
